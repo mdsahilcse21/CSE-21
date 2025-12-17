@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 10 - E-commerce Navbar</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        style.css
+.container{
+    margin: 0px;
+    padding: 0px;
+}
+.navbar{
+    background:#111;
+    color:white;
+    padding:10px 20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.nav-center{
+    display:flex;
+    gap:20px;
+}
+.nav-item{
+    cursor:pointer;
+}
+.nav-item:hover{
+    text-decoration:underline;
+}
+.nav-right{
+    display:flex;
+    gap:15px;
+}
+.nav-btn{
+    border:1px solid white;
+    padding:5px 12px;
+    border-radius:20px;
+    cursor:pointer;
+}
+.nav-btn:hover{
+    background:white;
+    color:black;
+}
+.Item{
+    padding:20px;
+}
+.Item1{
+    font-size:24px;
+    margin-bottom:5px;
+}
+@media(max-width:768px){
+    .navbar{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+    .nav-center,
+    .nav-right{
+        flex-direction:column;
+        width:100%;
+        margin-top:10px;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="nav-left">
+                <div class="logo">
+                    ShopEase
+                </div>
+            </div>
+            <div class="nav-center">
+                <div class="nav-item">Home</div>
+                <div class="nav-item">Products</div>
+                <div class="nav-item">Categories</div>
+                <div class="nav-item">Deals</div>
+                <div class="nav-item">Contact</div>
+            </div>
+            <div class="nav-right">
+                <div class="nav-item cart">Cart</div>
+                <div class="nav-btn">Login</div>
+            </div>
+        </div>
+        <div class="Item">
+            <div class="Item1">Welcome to ShopEase!</div>
+            <div class="Item2">
+                Your one-stop destination for all shopping needs.
+            </div>
+        </div>
+    </div>
+</body>
+</html>
