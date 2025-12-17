@@ -1,60 +1,57 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Hotel Room Booking Form</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking</title>
 </head>
 <body>
-  <h1 align="center">Hotel Room Booking Form</h1>
-  <form action="#" method="post" align="center">
-
-    <!-- Name -->
-    <label for="fullname">Full Name:</label>
-    <input type="text" id="fullname" name="fullname" required>
-    <br><br>
-
-    <!-- Email -->
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required>
-   <br><br>
-
-<!-- Phone -->
-<label for="phone">Phone:</label>
-<input type="tel" id="phone" name="phone" required>
+    <fieldset>
+<legend>Hotel room booking form</legend>
+<form action=".\response.html" name="Hotel room booking form"
+target="_blank" method="get">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
 <br><br>
 
-<!-- Check-in & Check-out -->
-<label for="checkin">Check-in Date:</label>
-<input type="date" id="checkin" name="checkin">
+<label for="email">Email:</label>
+<input type="email" id="email" name="email" placeholder="Enter your email" required>
 <br><br>
 
-<label for="checkout">Check-out Date:</label>
-<input type="date" id="checkout" name="checkout">
+<label for="tel">Phone:</label>
+<input type="tel" id="tel" name="tel" required>
 <br><br>
 
-<!-- Room Type -->
-<label for="room">Room Type:</label>
-<select id="room" name="room">
-    <option value="single">Single Room</option>
-    <option value="double">Double Room</option>
-    <option value="deluxe">Deluxe Room</option>
-    <option value="suite">Suite</option>
+<label for="check in date">Check in date:</label>
+<input type="date" id="check in date" name="check in date" required>
+<br><br>
+
+<label for="check out date">Check out date:</label>
+<input type="date" id="check out date" name="check out date" required>
+<br><br>
+
+<label for="select">Room type:</label>
+<select name="select" id="select">
+    <option value="">Room type</option>
+    <option value="Single room">Single room</option>
+    <option value="Double room">Double room</option>
 </select>
 <br><br>
 
-<!-- Number of Guests -->
-<label for="guests">Number of Guests:</label>
-<input type="number" id="guests" name="guests" min="1" max="10">
+<label for="Guest">No. of guest:</label>
+<input type="number" id="Guest" name="Guest" min="1">
 <br><br>
 
-<!-- Special Requests -->
-<label for="requests">Special Requests:</label><br>
-<textarea id="requests" name="requests" rows="4" cols="40"></textarea>
+<label for="Request">Special request:</label><br>
+<textarea name="text" id="Request" rows="7" cols="30"></textarea>
 <br><br>
 
-<!-- Buttons -->
-<input type="submit" value="Book Now">
-<input type="reset" value="Reset Form">
+<input type="submit" value="Book now">
+<input type="reset" value="reset now">
 
 </form>
+    </fieldset>
+            <p>md sahil cse21 2025b01010870</p>
+
 </body>
 </html>
