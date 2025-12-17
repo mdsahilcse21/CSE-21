@@ -1,32 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>CSS Box Model Demo</title>
+    <title>Student Profile Cards</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+       
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.card {
+    width: 180px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    background: #ffffff;
+    box-shadow: 0px 0px 10px #dcdcdc;
+}
+
+.circle {
+    width: 60px;
+    height: 60px;
+    background: #2f78ff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    margin: 0 auto 10px auto;
+    font-size: 18px;
+}
+
+.name {
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.info {
+    font-size: 13px;
+    color: #444;
+}
+    </style>
 </head>
-<body style="background:#1f2d3d; font-family: Arial, sans-serif; text-align:center; padding-top:40px;">
-
-    <h2 style="color:white; margin-bottom:30px;">CSS Box Model</h2>
-
-    <!-- Margin -->
-    <div style="background:#ff6f47; padding:20px; display:inline-block;">
-
-        <!-- Border -->
-        <div style="background:#1eb4d4; padding:20px; border:3px solid #1eb4d4;">
-
-            <!-- Padding -->
-            <div style="background:#f4d35e; padding:20px;">
-
-                <!-- Content -->
-                <div style="background:#20c997; padding:40px; color:white;">
-                    Content
-                </div>
-
-            </div>
-
-        </div>
-
+<body>
+<div class="container">
+    <div class="card">
+        <div class="circle">FF</div>
+        <div class="name">Faraz Farooqui</div>
+        <div class="info">B.Tech - CSE-AIML<br>Roll No: 2025b15310206<br>1st 
+Year</div>
     </div>
+    <div class="card">
+        <div class="circle">AD</div>
+        <div class="name">Arush Dixit</div>
+        <div class="info">B.Tech - CSE-AIML<br>Roll No: 2025b15310055<br>1st 
+Year</div>
+    </div>
+    <div class="card">
+        <div class="circle">MA</div>
+        <div class="name">Mohd Affan</div>
+        <div class="info">B.Tech - CSE<br>Roll No: 2025b01010229<br>1st Year</div>
+    </div>
+</div>
+        <p>md sahil cse21 2025b01010870</p>
 
 </body>
 </html>
